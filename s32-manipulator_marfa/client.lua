@@ -143,7 +143,7 @@ Citizen.CreateThread(function()
         SetBlipAsShortRange(blip, true)
     
         BeginTextCommandSetBlipName("STRING")
-        AddTextComponentString('Vinzare Facturi')
+        AddTextComponentString('Vanzare Facturi')
         EndTextCommandSetBlipName(blip)
 end)
 
