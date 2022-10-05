@@ -35,11 +35,11 @@ Citizen.CreateThread(function()
                                 if IsControlJustPressed(0, 38) then
                                     --checkPerm()
                                     if not inTura then
-                                        TriggerServerEvent("get:job")
                                         ExecuteCommand("e think")
                                         exports.rprogress:Start("Semnezi contractul de munca", 5000)
                                         ExecuteCommand("e c")
-                                        inTura = true    
+                                        inTura = true
+                                        TriggerServerEvent("get:job")
                                     else
                                         ExecuteCommand("e nervous")
                                         exports.rprogress:Start("Rupi contractul de munca", 5000)
