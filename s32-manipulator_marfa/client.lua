@@ -134,7 +134,6 @@ function DrawText3Ds(x, y, z, text)
 end
 
 Citizen.CreateThread(function()
-    if Config.UseBlip then
         local blip = AddBlipForCoord(-435.58792114258,6154.4213867188,31.478054046631)
   
         SetBlipSprite (blip, 500)
@@ -146,7 +145,5 @@ Citizen.CreateThread(function()
         BeginTextCommandSetBlipName("STRING")
         AddTextComponentString('Vinzare Facturi')
         EndTextCommandSetBlipName(blip)
-    
-    end
 end)
 
