@@ -7,12 +7,8 @@ vRPclient = Tunnel.getInterface("vRP","vrp_constructor")
 RegisterServerEvent('get:job')
 AddEventHandler('get:job', function()
 	local user_id = vRP.getUserId({source})
-	local orejucate = vRP.getUserHoursPlayed({user_id})
-	if orejucate >= 10 then
 		vRP.addUserGroup({user_id, "Manipulator marfa"})
 		vRPclient.notifyInfo(user_id, {"Mergi si incepe munca!"})
-	else
-		vRPclient.notifyError(user_id, {"Nu ai 10 ore"})
 	end
 end)
 RegisterServerEvent('remove:job')
